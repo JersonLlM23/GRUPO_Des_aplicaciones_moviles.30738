@@ -1,8 +1,10 @@
-# GRUPO_Des_aplicaciones_moviles.30738
-UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
-CARRERA DE SOFTWARE
+# UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
 
-Grupo de trabajo para la materia: "Desarrollo de aplicaciones móviles". 
-NRC:30738
-Integrantes:
-Llumiquinga M. Jerson
+## CARRERA DE SOFTWARE
+
+**Materia:** Desarrollo de aplicaciones móviles  
+**NRC:** 30738
+
+### Integrantes:
+
+- Llumiquinga M. Jerson
