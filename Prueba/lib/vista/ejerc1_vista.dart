@@ -38,7 +38,6 @@ class _Ejerc1ViewState extends State<Ejerc1View> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Átomo: NumberInput (texto)
             TextField(
               controller: _numero1Controller,
               keyboardType: TextInputType.number,
