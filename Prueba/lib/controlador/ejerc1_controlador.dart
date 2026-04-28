@@ -18,7 +18,6 @@ class Ejerc1Controlador {
     return a;
   }
 
-  // Validacion de primos
   void comprobar(String entrada1, String entrada2) {
     // no null
     if (entrada1.trim().isEmpty || entrada2.trim().isEmpty) {
@@ -37,13 +36,13 @@ class Ejerc1Controlador {
       return;
     }
 
-    // Validar que sean positivos
+    //  positivos
     if (numero1 <= 0 || numero2 <= 0) {
       modelo.mensaje = 'Los números deben ser enteros positivos.';
       return;
     }
 
-    // Guardar  enmodelo
+    // Guardar
     modelo.numero1 = numero1;
     modelo.numero2 = numero2;
 

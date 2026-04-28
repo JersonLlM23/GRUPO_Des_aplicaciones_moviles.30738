@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../controlador/ejerc1_controlador.dart';
 
 class Ejerc1View extends StatefulWidget {
@@ -40,19 +39,15 @@ class _Ejerc1ViewState extends State<Ejerc1View> {
           children: [
             TextField(
               controller: _numero1Controller,
-              keyboardType: TextInputType.number,
-              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               decoration: const InputDecoration(
                 labelText: 'Número A',
                 border: OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 12),
-            // Átomo: NumberInput (texto)
+            // Átomo
             TextField(
               controller: _numero2Controller,
-              keyboardType: TextInputType.number,
-              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               decoration: const InputDecoration(
                 labelText: 'Número B',
                 border: OutlineInputBorder(),
@@ -70,10 +65,7 @@ class _Ejerc1ViewState extends State<Ejerc1View> {
             const SizedBox(height: 16),
             // Resultado con if/else (sin ternario)
             if (_mensajeResultado.isEmpty)
-              Text(
-                'Ingrese valores y presione Comprobar',
-                style: Theme.of(context).textTheme.bodyLarge,
-              )
+              Text('Ejercicio', style: Theme.of(context).textTheme.bodyLarge)
             else
               Text(
                 _mensajeResultado,
