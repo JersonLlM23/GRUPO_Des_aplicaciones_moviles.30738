@@ -23,6 +23,14 @@ class ComidaControlador {
       return 'Ingrese el nombre del cliente';
     }
 
+    if (nombre.trim().length < 3) {
+      return 'El nombre debe tener al menos 3 caracteres';
+    }
+
+    if (nombre.trim().length > 30) {
+      return 'El nombre no debe exceder los 20 caracteres';
+    }
+
     if (!RegExp(r'^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$').hasMatch(nombre.trim())) {
       return 'Ingrese un nombre válido';
     }
@@ -34,7 +42,7 @@ class ComidaControlador {
     int cantidad;
     try {
       cantidad = int.parse(cantidadTexto);
-    } catch (_) {
+    } catch (e) {
       return 'La cantidad debe ser un número entero';
     }
 
@@ -71,11 +79,11 @@ class ComidaControlador {
 
   static double precioCombo(String combo) {
     if (combo == 'Combo con papas') {
-      return 1.80;
+      return 1.00;
     }
 
     if (combo == 'Combo completo') {
-      return 3.20;
+      return 2.50;
     }
 
     return 0.0;
